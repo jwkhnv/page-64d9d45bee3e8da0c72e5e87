@@ -1,0 +1,313 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>BYTEDOG · 把网络折腾得简单一点</title><meta name="description" content="BYTEDOG 是一个面向个人与小型团队的网络工具品牌，提供按月计费的流量套餐、多设备同时在线与基础节点服务,让折腾网络这件事变得更省心。"><meta name="keywords" content="BYTEDOG,网络工具,节点订阅,流量套餐,设备多开,流媒体解锁"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-13ffc336d4.q9zxom.cn/"><meta property="og:type" content="website"><meta property="og:title" content="BYTEDOG · 把网络折腾得简单一点"><meta property="og:description" content="BYTEDOG 是一个面向个人与小型团队的网络工具品牌，提供按月计费的流量套餐、多设备同时在线与基础节点服务,让折腾网络这件事变得更省心。"><meta property="og:url" content="https://p-13ffc336d4.q9zxom.cn/"><meta property="og:site_name" content="BYTEDOG"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-13ffc336d4.q9zxom.cn/", "name": "BYTEDOG · 把网络折腾得简单一点", "description": "BYTEDOG 是一个面向个人与小型团队的网络工具品牌，提供按月计费的流量套餐、多设备同时在线与基础节点服务,让折腾网络这件事变得更省心。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="64d9d45bee3e8da0c72e5e87:b70e84d2958f197775bb24dcf005cfd180438e3a258c84545992a34dd7300284:b8a5c50cba6beb207bad"></head><body id="top"><style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;font-size:16px;line-height:1.7;color:#2b2b36;background:#ededf2;-webkit-font-smoothing:antialiased}
+body{display:flex;min-height:100vh}
+a{color:#5b3fd6;text-decoration:none}
+a:hover{text-decoration:underline}
+nav.sidebar{position:sticky;top:0;align-self:flex-start;width:220px;min-height:100vh;padding:48px 24px;border-right:2px solid #2b2b36;background:#ededf2;flex-shrink:0}
+nav.sidebar .brand-mark{font-size:1.5rem;font-weight:800;letter-spacing:0.08em;color:#2b2b36;margin-bottom:6px}
+nav.sidebar .brand-sub{font-size:0.78rem;color:#6b6b78;margin-bottom:36px;letter-spacing:0.04em}
+nav.sidebar ul{list-style:none}
+nav.sidebar li{margin-bottom:18px}
+nav.sidebar a{color:#2b2b36;font-size:0.92rem;font-weight:500;display:block;padding:6px 0;border-left:3px solid transparent;padding-left:8px;transition:all .15s ease}
+nav.sidebar a:hover{border-left-color:#7a4ff0;text-decoration:none;color:#5b3fd6}
+nav.sidebar .reach-tag{margin-top:42px;font-size:0.72rem;color:#7a7a85;line-height:1.5;padding-left:8px;border-left:3px solid #c9c2e6}
+main.content{flex:1;min-width:0;padding:48px 56px;max-width:1080px}
+section{margin-bottom:72px}
+h1{font-size:2.4rem;font-weight:800;line-height:1.25;margin-bottom:18px;color:#1a1a24;letter-spacing:-0.01em}
+h2{font-size:1.55rem;font-weight:700;margin-bottom:18px;color:#1a1a24;padding-bottom:8px;border-bottom:2px solid #2b2b36}
+h3{font-size:1.1rem;font-weight:700;margin-bottom:10px;color:#1a1a24}
+p{margin-bottom:14px;color:#3a3a47}
+.intro-lead{font-size:1.05rem;color:#3a3a47;margin-bottom:28px;max-width:60ch}
+.dashboard-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:28px}
+.tile{border:2px solid #2b2b36;padding:18px 16px;background:#ffffff;border-radius:0}
+.tile .tile-label{font-size:0.72rem;color:#7a7a85;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px}
+.tile .tile-value{font-size:1.6rem;font-weight:800;color:#1a1a24;line-height:1.1}
+.tile .tile-value span{font-size:0.85rem;font-weight:600;color:#5b3fd6;margin-left:4px}
+.tile.accent{background:#7a4ff0;color:#ffffff;border-color:#5b3fd6}
+.tile.accent .tile-label{color:#e8e2ff}
+.tile.accent .tile-value{color:#ffffff}
+.tile.accent .tile-value span{color:#e8e2ff}
+.mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:12px}
+.mini-stat{border:2px solid #2b2b36;padding:14px 16px;background:#f5f3fb}
+.mini-stat .ms-label{font-size:0.78rem;color:#5b5b66;margin-bottom:4px}
+.mini-stat .ms-value{font-size:1.15rem;font-weight:700;color:#5b3fd6}
+.section-intro{color:#4a4a57;margin-bottom:24px;max-width:62ch}
+.plan-card{border:2px solid #2b2b36;padding:28px;margin-bottom:20px;background:#ffffff;position:relative}
+.plan-card.recommended{border-color:#7a4ff0;background:#f5f3fb}
+.plan-card .rec-flag{display:inline-block;background:#7a4ff0;color:#ffffff;font-size:0.7rem;font-weight:700;padding:4px 10px;letter-spacing:0.1em;margin-bottom:12px;text-transform:uppercase}
+.plan-card .plan-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+.plan-card h3{font-size:1.35rem;margin-bottom:0}
+.plan-card .plan-price{font-size:1.45rem;font-weight:800;color:#1a1a24}
+.plan-card .plan-price small{font-size:0.8rem;font-weight:500;color:#6b6b78;margin-left:4px}
+.plan-card .plan-annual{font-size:0.85rem;color:#5b3fd6;margin-bottom:18px;font-weight:600}
+.plan-card ul.feature-list{list-style:none;margin-bottom:6px}
+.plan-card ul.feature-list li{padding:6px 0 6px 22px;position:relative;font-size:0.95rem;color:#3a3a47;border-bottom:1px dashed #d4d0e0}
+.plan-card ul.feature-list li:last-child{border-bottom:none}
+.plan-card ul.feature-list li::before{content:"▸";position:absolute;left:0;top:6px;color:#7a4ff0;font-weight:700}
+.plan-card .plan-cta{display:inline-block;margin-top:14px;padding:8px 18px;border:2px solid #2b2b36;background:#ffffff;color:#1a1a24;font-weight:600;font-size:0.9rem}
+.plan-card.recommended .plan-cta{background:#7a4ff0;color:#ffffff;border-color:#5b3fd6}
+.plan-card .plan-cta:hover{text-decoration:none;background:#1a1a24;color:#ffffff;border-color:#1a1a24}
+.plan-card.recommended .plan-cta:hover{background:#5b3fd6;border-color:#5b3fd6}
+details.faq-item{border:2px solid #2b2b36;margin-bottom:14px;background:#ffffff;border-radius:0}
+details.faq-item[open]{background:#f5f3fb}
+details.faq-item summary{padding:16px 20px;font-weight:600;cursor:pointer;font-size:1rem;color:#1a1a24;list-style:none;display:flex;justify-content:space-between;align-items:center}
+details.faq-item summary::-webkit-details-marker{display:none}
+details.faq-item summary::after{content:"+";font-size:1.4rem;color:#7a4ff0;font-weight:700;line-height:1}
+details.faq-item[open] summary::after{content:"−"}
+details.faq-item .faq-body{padding:0 20px 18px;color:#3a3a47;font-size:0.95rem}
+.step-row{display:grid;grid-template-columns:60px 1fr;gap:16px;margin-bottom:18px;align-items:start}
+.step-row .step-no{font-size:1.8rem;font-weight:800;color:#7a4ff0;line-height:1}
+.step-row .step-body h3{margin-bottom:6px}
+.callout{border:2px solid #2b2b36;border-left:6px solid #7a4ff0;padding:16px 20px;background:#f5f3fb;margin:18px 0}
+.callout p{margin-bottom:0;color:#2b2b36}
+.divider{height:2px;background:#2b2b36;margin:48px 0 24px}
+footer{border-top:2px solid #2b2b36;padding-top:20px;font-size:0.82rem;color:#6b6b78}
+footer p{margin-bottom:4px;color:#6b6b78}
+@media (max-width:860px){
+body{flex-direction:column}
+nav.sidebar{position:relative;width:100%;min-height:auto;padding:24px 20px;border-right:none;border-bottom:2px solid #2b2b36}
+nav.sidebar ul{display:flex;flex-wrap:wrap;gap:6px}
+nav.sidebar li{margin-bottom:0;margin-right:6px}
+nav.sidebar a{padding:6px 10px;border-left:none;border:1.5px solid #2b2b36;font-size:0.82rem}
+nav.sidebar a:hover{border-color:#7a4ff0}
+nav.sidebar .reach-tag{display:none}
+nav.sidebar .brand-sub{margin-bottom:18px}
+main.content{padding:28px 20px}
+.dashboard-grid{grid-template-columns:repeat(2,1fr)}
+.mini-stats{grid-template-columns:1fr}
+h1{font-size:1.75rem}
+.plan-card .plan-head{flex-direction:column;align-items:flex-start}
+}
+</style><nav class="sidebar" aria-label="主导航">
+<div class="brand-mark">BYTEDOG</div>
+<div class="brand-sub">一个爱折腾网络的小团队</div>
+<ul>
+<li><a href="#hero">▾ 概览</a></li>
+<li><a href="#why">▾ 为什么做</a></li>
+<li><a href="#plans">▾ 套餐</a></li>
+<li><a href="#start">▾ 怎么开始</a></li>
+<li><a href="#notes">▾ 使用须知</a></li>
+<li><a href="#faq">▾ 常见问题</a></li>
+</ul>
+<div class="reach-tag">联系工单 / 邮箱<br>请前往订阅后控制台获取</div>
+</nav>
+<main class="content">
+<section id="hero">
+<h1>BYTEDOG · 把网络折腾得简单一点</h1>
+<p class="intro-lead">我们是一群喜欢摆弄网络工具的朋友，做了一个按月计费的流量订阅服务。没有什么花哨的口号，只是想让你打开电脑、手机、电视盒子的时候，少花点时间找节点、多花点时间做正事。</p>
+
+<div class="dashboard-grid">
+<div class="tile accent">
+<div class="tile-label">主套餐月费</div>
+<div class="tile-value"><span>¥</span>35</div>
+</div>
+<div class="tile">
+<div class="tile-label">月度流量</div>
+<div class="tile-value">300<span>GB</span></div>
+</div>
+<div class="tile">
+<div class="tile-label">同时在线</div>
+<div class="tile-value">5<span>台</span></div>
+</div>
+<div class="tile">
+<div class="tile-label">工单响应</div>
+<div class="tile-value">7×24<span>h</span></div>
+</div>
+</div>
+
+<div class="mini-stats">
+<div class="mini-stat">
+<div class="ms-label">起步价</div>
+<div class="ms-value">¥15 / 月</div>
+</div>
+<div class="mini-stat">
+<div class="ms-label">年度折算</div>
+<div class="ms-value">省两个月</div>
+</div>
+<div class="mini-stat">
+<div class="ms-label">设备覆盖</div>
+<div class="ms-value">手机 / PC / 路由 / 盒子</div>
+</div>
+</div>
+</section>
+
+<section id="why">
+<h2>为什么做 BYTEDOG</h2>
+<p class="section-intro">起因特别朴素：每次换电脑、换路由器，朋友都会问一句——"你那节点是怎么弄的？发我一份呗"。发来发去之后，我们就想，干脆把它整理成一个像模像样的小服务，按月订阅，按用量计费，谁也不用不好意思开口。</p>
+<p>BYTEDOG 不是那种一上来就讲"全球骨干""毫秒级延迟"的服务。我们更愿意把日常使用中真正关心的几件事摆出来：流量够不够、设备能不能多开、出了问题有没有人理。下面这些数字就是我们目前能给到的承诺。</p>
+</section>
+
+<section id="plans">
+<h2>三档套餐，挑一个顺手的</h2>
+<p class="section-intro">按月付，随时停；按年付，一次性省下两个月的钱。所有套餐均含同一套节点池，区别在于流量上限、设备数量和工单优先级。</p>
+
+<article class="plan-card">
+<div class="plan-head">
+<h3>基础版</h3>
+<div class="plan-price">¥15<small>/ 月</small></div>
+</div>
+<div class="plan-annual">按年付仅需 ¥150 / 年</div>
+<ul class="feature-list">
+<li>每月 100GB 极速流量</li>
+<li>支持 3 台设备同时在线</li>
+<li>解锁基础流媒体</li>
+<li>普通线路节点池</li>
+</ul>
+<a class="plan-cta" href="#">开通基础版</a>
+</article>
+
+<article class="plan-card recommended">
+<span class="rec-flag">大多数人的选择</span>
+<div class="plan-head">
+<h3>旗舰版</h3>
+<div class="plan-price">¥35<small>/ 月</small></div>
+</div>
+<div class="plan-annual">按年付仅需 ¥350 / 年</div>
+<ul class="feature-list">
+<li>每月 300GB 极速流量</li>
+<li>支持 5 台设备同时在线</li>
+<li>全节点原生流媒体解锁</li>
+<li>IPLC 专线游戏加速优化</li>
+<li>7×24 优先工单支持</li>
+</ul>
+<a class="plan-cta" href="#">开通旗舰版</a>
+</article>
+
+<article class="plan-card">
+<div class="plan-head">
+<h3>团队版</h3>
+<div class="plan-price">¥85<small>/ 月</small></div>
+</div>
+<div class="plan-annual">按年付仅需 ¥850 / 年</div>
+<ul class="feature-list">
+<li>每月 1000GB 极速流量</li>
+<li>支持 20 台设备同时在线</li>
+<li>VIP 专属高带宽节点</li>
+<li>支持企业定制路由</li>
+<li>专属客户经理服务</li>
+</ul>
+<a class="plan-cta" href="#">开通团队版</a>
+</article>
+
+<div class="callout">
+<p>所有套餐价格、流量和设备数量以你订阅时看到的页面为准。BYTEDOG 保留在合理范围内调整配置档位的权利，但已订阅用户的当期权益不受影响。</p>
+</div>
+</section>
+
+<section id="start">
+<h2>拿到订阅，五步就能用上</h2>
+<p class="section-intro">整个流程没有隐藏步骤，我们尽量写得像一份给朋友的便签。</p>
+
+<div class="step-row">
+<div class="step-no">01</div>
+<div class="step-body">
+<h3>挑一档套餐，下单</h3>
+<p>在上面的套餐里选一个你认为够用的，按月或按年都行。支付完成后系统会自动开通账号，并把订阅链接发到你填写的邮箱。</p>
+</div>
+</div>
+
+<div class="step-row">
+<div class="step-no">02</div>
+<div class="step-body">
+<h3>复制订阅链接</h3>
+<p>邮箱里会收到一段以 <code>http</code> 或 <code>ss://</code> 开头的链接，整段复制下来即可。链接里已经包含你的账号信息，不用再额外配置。</p>
+</div>
+</div>
+
+<div class="step-row">
+<div class="step-no">03</div>
+<div class="step-body">
+<h3>挑一个你顺手的客户端</h3>
+<p>Windows / macOS / iOS / Android / 路由器 / 电视盒子，都有对应的开源或官方客户端。把订阅链接粘贴进去，客户端会自己下载节点列表。</p>
+</div>
+</div>
+
+<div class="step-row">
+<div class="step-no">04</div>
+<div class="step-body">
+<h3>挑一个顺手的节点，连上</h3>
+<p>列表里会有延迟数字，绿色的通常就是当前最快的那个。双击连接，等小图标变成绿色就算成功了。</p>
+</div>
+</div>
+
+<div class="step-row">
+<div class="step-no">05</div>
+<div class="step-body">
+<h3>遇到问题，发工单</h3>
+<p>旗舰版与团队版有优先工单通道，基础版一般在 12 小时内也会有人回复。把截图、报错信息和订单号一起发过来，我们排查起来最快。</p>
+</div>
+</div>
+</section>
+
+<section id="notes">
+<h2>使用前请先看几眼</h2>
+<p>BYTEDOG 是个人与小型团队使用的网络工具集合，使用前请确认你的用途符合当地法律法规与服务条款。下面几条是我们希望每个新用户都先读一遍的提醒：</p>
+<ul>
+<li>流量按自然月结算，每月 1 日 0 点重置，未用完的部分不结转。</li>
+<li>同时在线设备数以你账号下最近 10 分钟内的心跳为准，超出后会按最早登录的设备依次踢出。</li>
+<li>订阅链接属于个人凭据，请勿公开发布或转借他人，被滥用时我们可能临时冻结账号。</li>
+<li>节点列表会不定期更新，请保持客户端自动更新订阅的设置开启，避免拿到过期的配置。</li>
+</ul>
+</section>
+
+<section id="faq">
+<h2>常见问题</h2>
+<p class="section-intro">下面这些是最近一个月里被问得最多的几件事。如果你还有其他疑问，发过来我们再补。</p>
+
+<details class="faq-item">
+<summary>BYTEDOG 适合什么样的人用？</summary>
+<div class="faq-body">
+<p>主要是个人开发者和经常出差、需要多设备同时在线的小团队。如果你只是偶尔用一次，其实没必要订阅——免费工具也能满足临时需求。我们更愿意服务那些每天都要用、又不想自己维护节点的人。</p>
+</div>
+</details>
+
+<details class="faq-item">
+<summary>套餐之间可以随时切换吗？</summary>
+<div class="faq-body">
+<p>可以。在订阅控制台里选择升档或降档，差额会按剩余天数折算，多退少补。按月订阅切换到按年订阅时，会先结算当期已发生的费用，再重新计费。</p>
+</div>
+</details>
+
+<details class="faq-item">
+<summary>流量用完了会怎么样？</summary>
+<div class="faq-body">
+<p>当月流量耗尽后，订阅不会被立刻停掉，而是进入限速状态，限速期间仍可正常访问网页和收发邮件，下个月 1 日自动恢复全速。如果你急着用，可以单独购买加油包，按 10GB / 5 元计费。</p>
+</div>
+</details>
+
+<details class="faq-item">
+<summary>支持哪些客户端？</summary>
+<div class="faq-body">
+<p>我们提供标准的订阅链接格式，兼容市面上绝大多数主流客户端，包括 Windows、macOS、iOS、Android 以及常见的路由器固件。具体客户端名称和版本请以你订阅后收到的入门邮件为准，那里会附带分平台的图文教程。</p>
+</div>
+</details>
+
+<details class="faq-item">
+<summary>团队版是怎么计费的？</summary>
+<div class="faq-body">
+<p>团队版按账号计费，一个账号最多 20 台设备同时在线。如果你们公司希望按人分发独立账号，可以联系专属客户经理开通子账号功能，按人数另行报价。</p>
+</div>
+</details>
+
+<details class="faq-item">
+<summary>退款政策是怎样的？</summary>
+<div class="faq-body">
+<p>首次订阅 7 天内，如果实际使用流量不超过 5GB 且未使用过优先工单通道，可以申请全额退款。第二次起的续费周期不再支持无理由退款，但可以随时停订下个月。</p>
+</div>
+</details>
+
+<details class="faq-item">
+<summary>BYTEDOG 会记录我的访问记录吗？</summary>
+<div class="faq-body">
+<p>我们只保留维持服务所必须的最小日志：登录时间、流量用量、并发设备数。所有日志在 30 天后自动删除，不会用于任何形式的画像或转售。具体的数据处理范围以你下单时勾选同意的服务协议为准。</p>
+</div>
+</details>
+</section>
+
+<div class="divider"></div>
+<footer>
+<p>BYTEDOG · 一个爱折腾网络的小团队</p>
+<p>本页所列套餐价格、流量与设备数量仅作示例说明，以你下单时实际看到的页面为准。</p>
+</footer>
+</main><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>
